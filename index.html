@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan Sowemimo — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">Hassan Sowemimo</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-bg" style="background-image: url('assets/BACKGROUND.jpeg');" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Hassan Sowemimo</h1>
+      <p class="hero-tagline">CS&amp;E Student &nbsp;·&nbsp; Embedded Systems &nbsp;·&nbsp; IoT &amp; AI</p>
+      <p class="hero-bio">
+        I am a senior student in the Department of Computer Science and Engineering at the University of Toledo and have gained practical experience in embedded systems, hardware-software integration, and distributed systems; I have a proven ability when it comes to designing complete IoT solutions that combine AI/ML with real-time data streaming.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-avatar">
+      <img src="assets/profile.jpg" alt="Hassan Sowemimo" class="avatar-photo" />
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Technologies and tools I work with</p>
+      <div class="skills-grid">
+        <div class="skill-card color-purple">
+          <h3>Languages &amp; Frameworks</h3>
+          <p>Python, C/C++ (Embedded), JavaScript, HTML/CSS</p>
+        </div>
+        <div class="skill-card color-cyan">
+          <h3>IoT &amp; Protocols</h3>
+          <p>RabbitMQ, MQTT, Arduino Uno/Nano, ESP32, Raspberry Pi</p>
+        </div>
+        <div class="skill-card color-green">
+          <h3>Design &amp; Simulation</h3>
+          <p>PCB Design, 3D Modeling &amp; Mechanical Design</p>
+        </div>
+        <div class="skill-card color-orange">
+          <h3>Technical Tools</h3>
+          <p>Arduino IDE, KiCAD, Fusion360, Git, Visual Studio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt projects-bg" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Things I've built</p>
+      <div class="projects-timeline">
+
+        <div class="project-timeline-item color-green">
+          <div class="project-timeline-dot"></div>
+          <div class="project-timeline-content">
+            <div class="timeline-header">
+              <h3>Smart Home Security &amp; Door Lock Controller</h3>
+              <span class="timeline-date">Jul 2025 – Sep 2025</span>
+            </div>
+            <div class="project-details">
+              <p class="project-category">Embedded Systems</p>
+              <ul class="project-bullets">
+                <li>Microcontroller-based security system with motion detection, PIN authentication, and servo-controlled door locking.</li>
+                <li>Integrated PIR sensor, 16x2 LCD, 4x4 keypad, buzzer, LEDs, and servo using Arduino Uno (C/Arduino IDE).</li>
+                <li>Menu-driven UI to arm/disarm security and manage door access with timed PIN validation.</li>
+              </ul>
+              <div class="project-tags">
+                <span>Arduino Uno</span><span>C/C++</span><span>PIR Sensor</span><span>Servo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-timeline-item color-orange">
+          <div class="project-timeline-dot"></div>
+          <div class="project-timeline-content">
+            <div class="timeline-header">
+              <h3>Custom PCB Design — Security Module &amp; Gamepad</h3>
+              <span class="timeline-date">Sep 2025</span>
+            </div>
+            <div class="project-details">
+              <p class="project-category">Hardware Design</p>
+              <ul class="project-bullets">
+                <li>Designed schematics, custom footprints, and PCB layouts for a security module and a custom gamepad.</li>
+                <li>Routed multi-component boards following signal integrity and manufacturability practices.</li>
+              </ul>
+              <div class="project-tags">
+                <span>KiCad</span><span>PCB Design</span><span>Schematics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-timeline-item color-cyan">
+          <div class="project-timeline-dot"></div>
+          <div class="project-timeline-content">
+            <div class="timeline-header">
+              <h3>Acoustic Threat Detection Node</h3>
+              <span class="timeline-date">Jan 2026 – May 2026</span>
+            </div>
+            <div class="project-details">
+            <p class="project-category">IoT &amp; AI</p>
+            <ul class="project-bullets">
+              <li>High-fidelity acoustic sensor node using ESP32-S3 and INMP441 (I2S) microphone for real-time threat classification.</li>
+              <li>Distributed data pipeline with RabbitMQ streaming sensor payloads to a Spring Boot microservice.</li>
+              <li>Integrated Google Gemini AI to generate localized emergency protocols automatically.</li>
+              <li>UART-based GPS modules for sub-meter geolocation on emergency response alerts.</li>
+            </ul>
+            <div class="project-tags">
+              <span>ESP32</span><span>RabbitMQ</span><span>Spring Boot</span><span>Gemini AI</span><span>GPS</span>
+            </div>
+            <div class="project-media">
+              <button class="media-thumb" type="button" data-type="image" data-src="assets/acoustic-board-1.jpeg">
+                <img src="assets/acoustic-board-1.jpeg" alt="CampuSafe sensor board, assembled" loading="lazy" />
+              </button>
+              <button class="media-thumb" type="button" data-type="image" data-src="assets/acoustic-board-2.jpeg">
+                <img src="assets/acoustic-board-2.jpeg" alt="CampuSafe sensor board close-up" loading="lazy" />
+              </button>
+              <button class="media-thumb" type="button" data-type="image" data-src="assets/acoustic-board-3.jpeg">
+                <img src="assets/acoustic-board-3.jpeg" alt="CampuSafe sensor board, underside" loading="lazy" />
+              </button>
+              <button class="media-thumb" type="button" data-type="image" data-src="assets/acoustic-schematic.png">
+                <img src="assets/acoustic-schematic.png" alt="Acoustic sensor node schematic" loading="lazy" />
+              </button>
+              <button class="media-thumb" type="button" data-type="image" data-src="assets/acoustic-pcb-layout.png">
+                <img src="assets/acoustic-pcb-layout.png" alt="Acoustic sensor node PCB layout" loading="lazy" />
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-1.mp4">
+                <video src="assets/acoustic-demo-1.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-2.mp4">
+                <video src="assets/acoustic-demo-2.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-3.mp4">
+                <video src="assets/acoustic-demo-3.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-4.mp4">
+                <video src="assets/acoustic-demo-4.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-5.mp4">
+                <video src="assets/acoustic-demo-5.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-6.mp4">
+                <video src="assets/acoustic-demo-6.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+              <button class="media-thumb media-thumb-video" type="button" data-type="video" data-src="assets/acoustic-demo-7.mp4">
+                <video src="assets/acoustic-demo-7.mp4" muted preload="metadata"></video>
+                <span class="media-play">▶</span>
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">&times;</button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section" id="leadership">
+    <div class="container">
+      <h2 class="section-title">Leadership Activities</h2>
+      <p class="section-sub">Mentorship &amp; volunteer work</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot dot-cyan"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Robotics Building Coach</h3>
+              <span class="timeline-date">Aug 2023 – Dec 2024</span>
+            </div>
+            <p class="timeline-place">FIRST Tech Challenge — Toledo, OH &nbsp;·&nbsp; Volunteer</p>
+            <ul class="timeline-bullets">
+              <li>Mentored high-school students in robot construction, problem-solving, and engineering design principles.</li>
+              <li>Assisted in mechanical assembly and technical decision-making for competition-ready robots.</li>
+              <li>Encouraged structured troubleshooting and iterative testing practices.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-alt education-bg" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <p class="section-sub">Academic background</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot dot-purple"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-title-group">
+                <img src="assets/ut-logo.png" alt="University of Toledo logo" class="timeline-logo" />
+                <h3>University of Toledo</h3>
+              </div>
+              <span class="timeline-date">2023 – Present</span>
+            </div>
+            <p class="timeline-place">B.S. Computer Science and Engineering &nbsp;·&nbsp; GPA: 3.384 / 4.0 &nbsp;·&nbsp; Toledo, OH &nbsp;·&nbsp; Expected May 2028</p>
+            <div class="edu-awards">
+              <span class="award-purple">Dean's List 2023</span>
+              <span class="award-cyan">President's List 2024</span>
+              <span class="award-green">UT Scholarship Recipient</span>
+            </div>
+            <span class="edu-courses-hint">Hover to view coursework ▾</span>
+            <div class="edu-courses">
+              <div class="edu-term">
+                <h4>Fall 2023</h4>
+                <ul>
+                  <li>CHEM 1230 — General Chemistry I</li>
+                  <li>ECON 1200 — Principles of Microeconomics</li>
+                  <li>EECS 1030 — Intro to CSE</li>
+                  <li>MATH 1850 — Calculus I</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Spring 2024</h4>
+                <ul>
+                  <li>EECS 1510 — Object Oriented Programming</li>
+                  <li>EECS 2000 — EECS Professional Development</li>
+                  <li>ENGL 1110 — College Composition I</li>
+                  <li>MATH 1860 — Calculus II</li>
+                  <li>PHYS 2130 — Physics: Sci &amp; Eng Majors I</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Fall 2024</h4>
+                <ul>
+                  <li>EECS 1100 — Digital Logic Design</li>
+                  <li>EECS 2500 — Linear Data Structures</li>
+                  <li>MATH 2850 — Elem Multivariable Calculus</li>
+                  <li>PHYS 2140 — Physics: Sci &amp; Eng Majors II</li>
+                  <li>PHYS 2145 — Physics Sci &amp; Eng Majors II Lab</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Spring 2025</h4>
+                <ul>
+                  <li>EECS 2110 — Computer Architecture &amp; Organization</li>
+                  <li>EECS 2300 — Electric Circuits I</li>
+                  <li>EECS 2520 — Discrete Structures</li>
+                  <li>MATH 1890 — Elementary Linear Algebra</li>
+                  <li>MATH 2860 — Elem Differential Equations</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Fall 2025</h4>
+                <ul>
+                  <li>EECS 2510 — Non-Linear Data Structures</li>
+                  <li>EECS 3210 — Signals and Systems</li>
+                  <li>EECS 3400 — Electronics I</li>
+                  <li>ENGL 2950 — Science-Tech Report Writing</li>
+                  <li>PHIL 1010 — Introduction to Logic</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Spring 2026</h4>
+                <ul>
+                  <li>EECS 3540 — Operating Systems &amp; Systems Programming</li>
+                  <li>EECS 3550 — Software Engineering</li>
+                  <li>EECS 4100 — Theory of Computation</li>
+                  <li>EECS 4560 — Database Management Systems</li>
+                  <li>MIME 4000 — Engineering Statistics I</li>
+                  <li>REL 1220 — World Religions</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Fall 2026 <span class="edu-term-tag">In Progress</span></h4>
+                <ul>
+                  <li>EECS 3100 — Embedded Systems</li>
+                  <li>EECS 3150 — Data Communications</li>
+                  <li>EECS 4010 — Senior Design Project I</li>
+                  <li>EECS 4590 — Algorithms</li>
+                  <li>EECS 4760 — Computer Security</li>
+                </ul>
+              </div>
+              <div class="edu-term">
+                <h4>Spring 2027 <span class="edu-term-tag">Planned</span></h4>
+                <ul>
+                  <li>EECS 4020 — Senior Design Project II</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot dot-cyan"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Taidob College</h3>
+              <span class="timeline-date">2016 – 2022</span>
+            </div>
+            <p class="timeline-place">Secondary Education &nbsp;·&nbsp; Abeokuta, Ogun State, Nigeria</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Open to opportunities, collaborations, or just a chat.</p>
+      <div class="contact-links">
+        <a href="mailto:hsowemi2@rockets.utoledo.edu" class="contact-item" title="hsowemi2@rockets.utoledo.edu" aria-label="Email hsowemi2@rockets.utoledo.edu">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
+          </span>
+        </a>
+        <a href="https://linkedin.com/in/hsowemi2" target="_blank" rel="noopener" class="contact-item" title="linkedin.com/in/hsowemi2" aria-label="LinkedIn linkedin.com/in/hsowemi2">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.5V23h-4V8.5z"/></svg>
+          </span>
+        </a>
+        <a href="tel:4194676555" class="contact-item" title="419-467-6555" aria-label="Phone 419-467-6555">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed by Hassan Sowemimo &nbsp;·&nbsp; Built with Claude Code &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

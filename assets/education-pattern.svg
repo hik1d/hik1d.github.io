@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="420" viewBox="0 0 400 420">
+  <g fill="none" stroke="#39C5CF" stroke-opacity="0.09" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- graduation cap -->
+    <g transform="translate(40,50)">
+      <polygon points="22,0 44,9 22,18 0,9"/>
+      <path d="M8,11 L8,20 Q22,27 36,20 L36,11"/>
+      <line x1="36" y1="9" x2="41" y2="9"/>
+      <line x1="41" y1="9" x2="41" y2="25"/>
+      <circle cx="41" cy="27" r="2"/>
+    </g>
+
+    <!-- open book -->
+    <g transform="translate(150,90)">
+      <path d="M0,4 Q14,-4 28,4 L28,26 Q14,18 0,26 Z"/>
+      <path d="M28,4 Q42,-4 56,4 L56,26 Q42,18 28,26 Z"/>
+      <line x1="28" y1="4" x2="28" y2="26"/>
+      <line x1="6" y1="10" x2="20" y2="7"/>
+      <line x1="6" y1="16" x2="20" y2="13"/>
+      <line x1="36" y1="7" x2="50" y2="10"/>
+      <line x1="36" y1="13" x2="50" y2="16"/>
+    </g>
+
+    <!-- pencil -->
+    <g transform="translate(230,60) rotate(32)">
+      <rect x="-10" y="0" width="8" height="8" rx="1"/>
+      <line x1="-10" y1="4" x2="-2" y2="4"/>
+      <rect x="-2" y="0" width="38" height="8" rx="1"/>
+      <polygon points="36,0 48,4 36,8"/>
+      <line x1="40" y1="2" x2="44" y2="4"/>
+      <line x1="40" y1="6" x2="44" y2="4"/>
+    </g>
+
+    <!-- diploma scroll -->
+    <g transform="translate(320,110)">
+      <rect x="0" y="4" width="26" height="14" rx="2"/>
+      <circle cx="0" cy="11" r="4"/>
+      <circle cx="26" cy="11" r="4"/>
+      <path d="M9,18 L9,30 L13,26 L17,30 L17,18"/>
+    </g>
+
+    <!-- spiral notebook -->
+    <g transform="translate(60,180)">
+      <rect x="0" y="0" width="70" height="60" rx="3"/>
+      <circle cx="6" cy="8" r="2"/>
+      <circle cx="6" cy="20" r="2"/>
+      <circle cx="6" cy="32" r="2"/>
+      <circle cx="6" cy="44" r="2"/>
+      <circle cx="6" cy="56" r="2"/>
+      <line x1="20" y1="14" x2="60" y2="14"/>
+      <line x1="20" y1="24" x2="60" y2="24"/>
+      <line x1="20" y1="34" x2="60" y2="34"/>
+      <line x1="20" y1="44" x2="50" y2="44"/>
+    </g>
+
+    <!-- lightbulb idea -->
+    <g transform="translate(226,204)">
+      <circle cx="0" cy="0" r="12"/>
+      <path d="M-5,10 L5,10 L4,17 L-4,17 Z"/>
+      <line x1="-4" y1="12" x2="4" y2="12"/>
+      <line x1="-4" y1="14.5" x2="4" y2="14.5"/>
+      <line x1="0" y1="-20" x2="0" y2="-14"/>
+      <line x1="-14" y1="-6" x2="-9" y2="-3"/>
+      <line x1="14" y1="-6" x2="9" y2="-3"/>
+    </g>
+
+    <!-- compass / geometry -->
+    <g transform="translate(315,195)">
+      <circle cx="0" cy="0" r="3"/>
+      <line x1="0" y1="0" x2="-16" y2="40"/>
+      <line x1="0" y1="0" x2="16" y2="40"/>
+      <line x1="-16" y1="40" x2="-20" y2="44"/>
+      <line x1="16" y1="40" x2="20" y2="44"/>
+      <path d="M-16,40 A16,17 0 0 1 16,40" stroke-dasharray="2 4"/>
+    </g>
+
+    <!-- connecting dotted line -->
+    <path d="M84,66 L110,66 L110,98 L150,98" stroke-dasharray="1 5"/>
+    <path d="M282,66 L282,90 L320,90" stroke-dasharray="1 5"/>
+    <path d="M150,180 L150,150 L226,150 L226,192" stroke-dasharray="1 5"/>
+
+    <!-- small achievement star -->
+    <g transform="translate(266,150)">
+      <path d="M0,-9 L2.6,-2.8 L9,-2.8 L4,1.1 L5.9,7.2 L0,3.4 L-5.9,7.2 L-4,1.1 L-9,-2.8 L-2.6,-2.8 Z"/>
+    </g>
+
+    <!-- lower cluster: apple -->
+    <g transform="translate(30,300)">
+      <path d="M-9,5 C-9,-4 9,-4 9,5 C9,13 3,18 0,18 C-3,18 -9,13 -9,5 Z"/>
+      <line x1="0" y1="-4" x2="0" y2="-10"/>
+      <path d="M0,-8 C3,-10 7,-8 7,-5"/>
+    </g>
+
+    <!-- pencil (small, rotated) -->
+    <g transform="translate(140,330) rotate(-18)">
+      <rect x="-8" y="0" width="6" height="7" rx="1"/>
+      <rect x="-2" y="0" width="32" height="7" rx="1"/>
+      <polygon points="30,0 40,3.5 30,7"/>
+    </g>
+
+    <!-- ruler -->
+    <g transform="translate(215,318)">
+      <rect x="0" y="0" width="80" height="14" rx="2"/>
+      <line x1="8" y1="0" x2="8" y2="7"/>
+      <line x1="16" y1="0" x2="16" y2="5"/>
+      <line x1="24" y1="0" x2="24" y2="7"/>
+      <line x1="32" y1="0" x2="32" y2="5"/>
+      <line x1="40" y1="0" x2="40" y2="7"/>
+      <line x1="48" y1="0" x2="48" y2="5"/>
+      <line x1="56" y1="0" x2="56" y2="7"/>
+      <line x1="64" y1="0" x2="64" y2="5"/>
+      <line x1="72" y1="0" x2="72" y2="7"/>
+    </g>
+
+    <!-- stacked books -->
+    <g transform="translate(280,296)">
+      <rect x="0" y="16" width="70" height="10" rx="1"/>
+      <rect x="4" y="6" width="62" height="10" rx="1"/>
+      <rect x="8" y="-4" width="54" height="10" rx="1"/>
+      <line x1="8" y1="1" x2="62" y2="1"/>
+    </g>
+
+    <!-- graduation cap (small) -->
+    <g transform="translate(55,392)">
+      <polygon points="16,0 32,6.5 16,13 0,6.5"/>
+      <path d="M6,8 L6,14 Q16,19 26,14 L26,8"/>
+    </g>
+
+    <!-- achievement star -->
+    <g transform="translate(160,404)">
+      <path d="M0,-9 L2.6,-2.8 L9,-2.8 L4,1.1 L5.9,7.2 L0,3.4 L-5.9,7.2 L-4,1.1 L-9,-2.8 L-2.6,-2.8 Z"/>
+    </g>
+
+    <path d="M74,340 L74,370 L140,370" stroke-dasharray="1 5"/>
+    <path d="M370,330 L398,330 L398,398" stroke-dasharray="1 5"/>
+  </g>
+</svg>
