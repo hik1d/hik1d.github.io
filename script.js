@@ -1,3 +1,34 @@
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinksEl = document.getElementById('navLinks');
+
+function closeMobileNav() {
+  navLinksEl.classList.remove('open');
+  navToggle.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('nav-lock');
+}
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navLinksEl.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', String(isOpen));
+  document.body.classList.toggle('nav-lock', isOpen);
+});
+
+navLinksEl.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', closeMobileNav);
+});
+
+// Tap-to-expand coursework (touch-friendly alternative to hover)
+document.querySelectorAll('.edu-courses-hint').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const content = btn.closest('.timeline-content');
+    const isOpen = content.classList.toggle('courses-open');
+    btn.textContent = isOpen ? 'Hide coursework ▴' : 'Tap to view coursework ▾';
+  });
+});
+
 // Active nav highlight on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-links a');
